@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jop Application</title>
+	<meta charset="utf-8"> 
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    
+    
+	<!-- for bootstrap file -->
+	<link rel="stylesheet" type="text/css" href="../../../public/css/bootstrap.css" />
+    <!-- for custome style -->
+    <link rel="stylesheet" type="text/css" href="../../../public/css/style.css" />
+    <!-- <script src="http://maps.googleapis.com/maps/api/js"></script>-->
+    <!-- for fontawesome -->
+    <link href="../../../public/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- for bxslider -->
+    <link href="../../../public/css/jquery.bxslider.css" rel="stylesheet" type="text/css">
+    
+</head>
+<body>
+<div class="myhead col-sm-12 col-xs-12">
+			    <div class="logo">
+			      <a href="index.html">
+			        <img src="../../../public/imgs/logo.png" />
+			      </a>
+			    </div>
+			    <div class="btns">
+			      <a class="login-btn">
+			        تسجيل الدخول
+			        <span class="glyphicon glyphicon-user"></span>
+			      </a>
+			      <a href="addComp.html">
+			        أضف شركتك
+			        <span class="glyphicon glyphicon-plus"></span>
+			      </a>
+			    </div>
+
+			    <div class="search">
+			      <div>
+			        <input type="text" placeholder="البحث"/>
+			          <input type="submit" />
+			          <span class="glyphicon glyphicon-search"></span>
+			      </div>
+
+			    </div>
+			 </div><!--end my heade-->
+
+	<div class="container">
+		<div class="row">
+			<div class="add-comp col-sm-5 col-xs-11">
+    <form role="form" method="post" action="" enctype="multipart/form-data">  
+                <input type="text" name="com-name" class="form-control input-sm"  placeholder="الوظيفة المطلوبة" required>       
+          
+              <input type="email" name="mail" class="form-control input-sm"  placeholder="مجال عمل الشركة او تصنيفها"required>
+          
+              <input type="text" name="phones" class="form-control input-sm"  placeholder="أرقام الهواتف" required>
+                
+                <input type="text" name="com-name" class="form-control input-sm"  placeholder=" الخبرات العملية : خبرة عملية في مجال ما ..." required>
+        
+        <input type="number" name="com-name" class="form-control input-sm"  placeholder=" حدود الراتب المقرر للوظيفة : " required>
+        <input type="text" name="phones" class="form-control input-sm"  placeholder="إستخدام الكمبيوتر" required>
+
+                  <input type="text" name="phones" class="form-control input-sm"  placeholder="الحالة الإجتماعية" required>
+              
+              <input type="text" name="phones" class="form-control input-sm"  placeholder="موقفك من التجنيد" required>
+      
+              <input type="text" name="address" class="form-control input-sm"  placeholder="العنوان تفصيليا"required>
+        
+        
+          <div class="places">
+                  <select id="gender">
+                      <option value="">الجنس</option>
+                      <option>ذكر</option>
+                      <option>مؤنث</option>
+                  </select>
+              
+              
+           </div>
+        <div class="time">
+                <label>مواعيد العمل</label>
+                <input type="time" name="from" class="form-control input-sm"  title="من">
+                <select>
+                  <option>ص</option>
+                  <option>م</option>
+                </select>
+
+                <input type="time" name="repass" class="form-control input-sm"  title="إلي">
+                <select>
+                  <option>ص</option>
+                  <option>م</option>
+                </select>
+              </div>
+        
+<!--
+       <input placeholder="إكتب تاريخ ميلادك هنا" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date">
+        <div class="fileUpload">
+                            <span>يرجي إرفاق ملف السيرة الذاتيه إن وجد</span>
+                            <input type="file" class="upload" onchange="$('#blah')[0].src = window.URL.createObjectURL(this.files[0])"/>
+                        </div>
+-->
+        
+        <input type="submit" name="submit" value="إعلان" />
+
+    </form>
+    </div><!--end add-comp-->
+		</div><!--end row-->
+	</div><!--end container-->
+
+    
+    <div class="login-form">
+                <h1>تسجيل الدخول</h1>
+                <form action="" method="">
+                    <span class="fa fa-user" id="admintxt"></span>
+                    <input type="text" placeholder="إدخل الاسم" class="txt"   required autofocus name="txtname">
+                    <span class="fa fa-lock" id="passtxt"></span>
+                    <input type="password" placeholder="الرقم السري" class="pass"  required name="txtpass">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" value="remember-me"> تذكرني
+                      </label>
+                    </div>
+                    <button type="submit" class="bt" name="lginbtn">دخــول</button>
+                </form>
+            </div>
+
+	<div class="footer1 col-sm-12">
+        <div class="fo-links">
+          <a href="index.html">الرئيسيه</a>
+          <a href="addComp.html">أضف شركتك</a>
+          <a href="contact.html">تواصل معنا</a>
+        </div>
+      </div><!--end footer-->
+    
+
+  <div class="s-area">
+    <span class="close-map"><i class="fa fa-map-marker"></i></span>
+    <span class="open-map"><i class="fa fa-map-marker"></i></span>
+    <div>
+      <from action="" method="">
+      <select>
+        <option>المحافظه</option>
+        <option>القاهره</option>
+        <option>الدقهليه</option>
+        <option>الإسكندريه</option>
+      </select>
+
+      <select>
+        <option>المدينه</option>
+        <option>المنصوره</option>
+        <option>القاهره</option>
+        <option>سندوب</option>
+      </select>
+
+      <select>
+        <option>المنطقه</option>
+        <option>الجلاء</option>
+        <option>الترعه</option>
+        <option>قناة السويس</option>
+      </select>
+
+      <select>
+        <option>التصنيف</option>
+        <option>أجهوه</option>
+        <option>ملابس</option>
+        <option>مطاعم</option>
+      </select>
+      <input type="submit" value="ذهاب" />
+      </from>
+    </div>
+  </div><!--end s-area-->
+    
+    <script type="text/javascript" src="../../../public/js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="../../../public/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../../public/js/jquery.bpopup.js"></script>
+    <script type="text/javascript" src="../../../public/js/jquery.bxslider.js"></script>
+	<script type="text/javascript" src="../../../public/js/script.js"></script>
+    
+</body>
+</html>

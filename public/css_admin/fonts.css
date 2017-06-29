@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'sans-reg';
+    src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'neosans-bold';
+    src: url('../fonts/NeoSans-bold.woff');
+}
+
+@font-face {
+    font-family: 'neosans-regular';
+    src: url('../fonts/NeoSans-regular.woff');
+}

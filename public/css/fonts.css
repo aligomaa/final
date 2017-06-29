@@ -1,0 +1,24 @@
+@font-face {
+	font-family: 'SEGOEUIL';
+	src: url('./SEGOEUIL.eot');
+	src: local('SEGOEUIL'), url('./SEGOEUIL.woff') format('woff'), url('./SEGOEUIL.ttf') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_1409">Text with this font applied</p> */
+.fontsforweb_fontid_1409 {
+	font-family: 'SEGOEUIL' !important;
+}
+
+/* Font downloaded from FontsForWeb.com */
+@font-face {
+	font-family: 'JF-Flat-regular';
+	src: url('./JF-Flat-regular.ttf');
+}
+@font-face{
+    font-family:'droid-kufi';
+    src:url('../fonts/droid.ttf');
+}
+
+@font-face{
+    font-family:'jor';
+    src:url('../fonts/jordan1.ttf');
+}

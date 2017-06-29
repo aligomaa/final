@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Egy4Shop</title>
+	<meta charset="utf-8"> 
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    
+    
+	<!-- for bootstrap file -->
+	<link rel="stylesheet" type="text/css" href="../../../public/css/bootstrap.css" />
+    <!-- for custome style -->
+    <link rel="stylesheet" type="text/css" href="../../../public/css/style.css" />
+    <!-- <script src="http://maps.googleapis.com/maps/api/js"></script>-->
+    <!-- for fontawesome -->
+    <link href="../../../public/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- for bxslider -->
+    <link href="../../../public/css/jquery.bxslider.css" rel="stylesheet" type="text/css">
+    
+    
+</head>
+<body>
+
+<div class="myhead col-sm-12 col-xs-12">
+    <div class="logo">
+      <a href="index.html">
+        <img src="../../../public/imgs/logo.png" />
+      </a>
+    </div>
+
+    <div class="btns">
+      <a class="login-btn">
+        تسجيل الدخول
+        <span class="glyphicon glyphicon-user"></span>
+      </a>
+      <a href="addComp.html">
+        أضف شركتك
+        <span class="glyphicon glyphicon-plus"></span>
+      </a>
+    </div>
+
+    <div class="search">
+      <div>
+        <input type="text" placeholder="البحث"/>
+          <input type="submit" />
+          <span class="glyphicon glyphicon-search"></span>
+      </div>
+
+    </div>
+  </div><!--end my heade-->
+
+<div class="container">
+  <div class="row">
+  <div class="add-comp col-sm-5 col-xs-11">
+    <form role="form" method="post" action="" enctype="multipart/form-data">  
+              <input type="text" name="com-name" class="form-control input-sm"  placeholder="اسم الشركه">
+          
+              <input type="text" name="name" class="form-control input-sm"  placeholder="الاسم المستخدم فى الدخول">
+          
+              <input type="email" name="mail" class="form-control input-sm"  placeholder="البريد الإلكترونى">
+          
+              <input type="password" name="pass" class="form-control input-sm"  placeholder="كلمة المرور">
+          
+              <input type="password" name="repass" class="form-control input-sm"  placeholder="إعادة كلمة المرور">
+
+          
+              <input type="text" name="phones" class="form-control input-sm"  placeholder="أرقام الهواتف">
+          
+              <div class="time">
+                <label>مواعيد العمل</label>
+                <input type="time" name="from" class="form-control input-sm"  title="من">
+                <select>
+                  <option>ص</option>
+                  <option>م</option>
+                </select>
+
+                <input type="time" name="repass" class="form-control input-sm"  title="إلي">
+                <select>
+                  <option>ص</option>
+                  <option>م</option>
+                </select>
+              </div>
+          
+              <div class="time">
+               <label>فترة الإستراحه</label>
+              <input type="time" name="repass" class="form-control input-sm" title="من">
+              <select>
+                <option>ص</option>
+                <option>م</option>
+              </select>
+
+              <input type="time" name="repass" class="form-control input-sm"  title="إلى">
+              <select>
+                <option>ص</option>
+                <option>م</option>
+              </select>
+              </div>
+          
+          <div class="places">
+              <label>حدد مكان الشركه</label>
+                  <select>
+                      <option value="">الدوله</option>
+                      <option>اختبار</option>
+                      <option>اختبار</option>
+                      <option>اختبار</option>
+                      <option>اختبار</option>
+                  </select>
+
+                  <select>
+                      <option value="">المحافظة</option>
+                      <option>اختبار</option>
+                      <option>اختبار</option>
+                      <option>اختبار</option>
+                      <option>اختبار</option>
+                  </select>
+
+                  <select>
+                      <option value="">المدينه</option>
+                      <option>اختبار</option>
+                      <option>اختبار</option>
+                      <option>اختبار</option>
+                      <option>اختبار</option>
+                  </select>
+
+                  <select>
+                      <option value="">المنطقه</option>
+                      <option>اختبار</option>
+                      <option>اختبار</option>
+                      <option>اختبار</option>
+                      <option>اختبار</option>
+                  </select>
+      
+              <input type="text" name="address" class="form-control input-sm"  placeholder="العنوان تفصيليا">
+           </div>
+           <div class="s-sort">
+           <label>التصنيف</label>
+           <select>
+             <option>ملابس</option>
+             <option>كمبيوتر</option>
+             <option>قطع غيار</option>
+           </select>
+
+              <a id="add-dept" class="btn">تصنيف أخر +</a>
+              <div class="an-sort">
+                <input type="text" placeholder="تصنيف اخر" />
+                <a id='add-an-sort'>إضافة</a>
+              </div><!--end an-sort-->
+<!--
+              <div id="dept-sort">
+              
+              <input type="text" name="sorts" class="form-control input-sm"  placeholder="اسم التصنيف">
+              <a id="ok-sort" >موافق</a>
+              </div>                           
+-->
+
+            <div class="imgcontent">
+              <div class="bstext" ><span>أختر صورة الشركه</span></div>
+                <output id="list"></output>
+              <input type="file" id="files" name="myFileSelect"/>
+            </div>
+        
+                <textarea rows='6' class="form-control input-sm" style="resize:vertical;" placeholder="نبذه مختصره عن الشركه"></textarea>
+        <!--rules-->
+        <div class="type">
+          <label>نوع الحساب</label>
+          <li>
+            <input type="radio" name="type" onClick='checkButton()' id="h"  />
+            <span>مجانى</span>
+          </li>
+
+          <li>
+            <input type="radio" name="type" onClick='checkButton()'  id="k" />
+            <span>مدفوع</span>
+          </li>
+        </div><!--end type-->
+
+      </div>  
+        <input type="submit" name="submit" value="ارسال" />
+
+    </form>
+    </div><!--end add-comp-->
+    </div><!--end row-->
+    </div><!--end container-->
+
+    <div class="login-form">
+                <h1>تسجيل الدخول</h1>
+                <form action="" method="">
+                    <span class="fa fa-user" id="admintxt"></span>
+                    <input type="text" placeholder="إدخل الاسم" class="txt"   required autofocus name="txtname">
+                    <span class="fa fa-lock" id="passtxt"></span>
+                    <input type="password" placeholder="الرقم السري" class="pass"  required name="txtpass">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" value="remember-me"> تذكرني
+                      </label>
+                    </div>
+                    <button type="submit" class="bt" name="lginbtn">دخــول</button>
+                </form>
+            </div>
+    
+    
+    <div class="free text-center">
+        
+        <h1>النظام المجاني</h1>
+        
+        <p>Energistically customize covalent data and optimal paradigms. Globally initiate resource maximizing value with multimedia based partnerships. Assertively envisioneer innovative initiatives without performance based sources. Globally extend intermandated intellectual capital with magnetic initiatives. Synergistically e-enable enterprise-wide total linkage and technically sound manufactured products.
+
+Progressively revolutionize future-proof core competencies with functionalized data. Continually e-enable market-driven.
+        Energistically customize covalent data and optimal paradigms. Globally initiate resource maximizing value with multimedia based partnerships. Assertively envisioneer innovative initiatives without performance based sources. Globally extend intermandated intellectual capital with magnetic initiatives. Synergistically e-enable enterprise-wide total linkage and technically sound manufactured products.
+
+Progressively revolutionize future-proof core competencies with functionalized data. Continually e-enable market-driven.
+        Energistically customize covalent data and optimal paradigms. Globally initiate resource maximizing value with multimedia based partnerships. Assertively envisioneer innovative initiatives without performance based sources. Globally extend intermandated intellectual capital with magnetic initiatives. Synergistically e-enable enterprise-wide total linkage and technically sound manufactured products.
+
+Progressively revolutionize future-proof core competencies with functionalized data. Continually e-enable market-driven.</p>
+
+            <div class="up-check">
+                  <label>
+                    <input type="checkbox" value="remember-me"> انا قرأت كافة الحقوق الخاصه بهذا النظام وأوافق علي الدفع
+                  </label>
+            </div>
+    </div>
+    
+    <div class="paied text-center">
+        
+        <h1>النظام المدفوع</h1>
+        
+        <p>Energistically customize covalent data and optimal paradigms. Globally initiate resource maximizing value with multimedia based partnerships. Assertively envisioneer innovative initiatives without performance based sources. Globally extend intermandated intellectual capital with magnetic initiatives. Synergistically e-enable enterprise-wide total linkage and technically sound manufactured products.
+
+Progressively revolutionize future-proof core competencies with functionalized data. Continually e-enable market-driven.
+        Energistically customize covalent data and optimal paradigms. Globally initiate resource maximizing value with multimedia based partnerships. Assertively envisioneer innovative initiatives without performance based sources. Globally extend intermandated intellectual capital with magnetic initiatives. Synergistically e-enable enterprise-wide total linkage and technically sound manufactured products.
+
+Progressively revolutionize future-proof core competencies with functionalized data. Continually e-enable market-driven.
+        Energistically customize covalent data and optimal paradigms. Globally initiate resource maximizing value with multimedia based partnerships. Assertively envisioneer innovative initiatives without performance based sources. Globally extend intermandated intellectual capital with magnetic initiatives. Synergistically e-enable enterprise-wide total linkage and technically sound manufactured products.
+
+Progressively revolutionize future-proof core competencies with functionalized data. Continually e-enable market-driven.</p>
+        
+        <div class="up-check">
+                  <label>
+                    <input type="checkbox" value="remember-me"> انا قرأت كافة الحقوق الخاصه بهذا النظام وأوافق علي الدفع
+                  </label>
+            </div>
+        
+    </div>
+    
+    
+    <div class="footer col-sm-12">
+        <div class="fo-links">
+          <a href="index.html">الرئيسيه</a>
+          <a href="addComp.html">أضف شركتك</a>
+          <a href="contact.html">تواصل معنا</a>
+        </div>
+      </div><!--end footer-->
+
+    
+  <div class="back"></div>
+
+  <div class="s-area">
+    <span class="close-map"><i class="fa fa-map-marker"></i></span>
+    <span class="open-map"><i class="fa fa-map-marker"></i></span>
+    <div>
+      <from action="" method="">
+      <select>
+        <option>المحافظه</option>
+        <option>القاهره</option>
+        <option>الدقهليه</option>
+        <option>الإسكندريه</option>
+      </select>
+
+      <select>
+        <option>المدينه</option>
+        <option>المنصوره</option>
+        <option>القاهره</option>
+        <option>سندوب</option>
+      </select>
+
+      <select>
+        <option>المنطقه</option>
+        <option>الجلاء</option>
+        <option>الترعه</option>
+        <option>قناة السويس</option>
+      </select>
+
+      <select>
+        <option>التصنيف</option>
+        <option>أجهوه</option>
+        <option>ملابس</option>
+        <option>مطاعم</option>
+      </select>
+      <input type="submit" value="ذهاب" />
+      </from>
+    </div>
+  </div><!--end s-area-->
+    
+    <script type="text/javascript" src="../../../public/js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="../../../public/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../../public/js/jquery.bpopup.js"></script>
+    <script type="text/javascript" src="../../../public/js/jquery.bxslider.js"></script>
+	<script type="text/javascript" src="../../../public/js/script.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Store | Inbox Messages</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- hover.css -->
+    <link href="css/hover.css" rel="stylesheet" type="text/css">
+    <!-- for alertify -->
+    <link href="css/alertify.css" rel="stylesheet" type="text/css">
+    <!-- for_fivicon -->
+    <link href="#" type="text/css" rel="icon">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand hvr-buzz-out" href="index.html">Store </a>
+            </div>
+
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav text-center">
+                <li class="dropdown open-user">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="images/avatar2.png" class="avt"> Amir Nageh <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu col-xs-12 text-center">
+
+                        <li class="frst">
+                            <img src="Images/avatar2_big.png" class="image-admin" alt="image-admin">
+                            <p>"Amir Nageh"
+                                <br>
+                                <small>Member since 2014</small></p>
+                        </li>
+
+                        <li class="personal">
+                            <!--                            <a href="profile.html" class="profile hvr-bounce-to-right">Profile</a>-->
+                            <a href="#" class="sgnout hvr-bounce-to-left">Sign Out</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown open-user msgs hidden-lg ">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> Messages<b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu col-xs-12 text-center msg-box">
+                        <li>
+                            <b><img src="images/me.jpg" alt="" width="50" height="50"></b>
+                            <div>
+                                <h1>Amir Nageh</h1>
+                                <span>odjsojdsmlfjvojefp,meovjohojfeojfe</span>
+                            </div>
+                        </li>
+                        <li>
+                            <b><img src="images/me.jpg" alt="" width="50" height="50"></b>
+                            <div>
+                                <h1>Amir Nageh</h1>
+                                <span>odjsojdsmlfjvojefp,meovjohojfeojfe</span>
+                            </div>
+                        </li>
+                        <li>
+                            <b><img src="images/me.jpg" alt="" width="50" height="50"></b>
+                            <div>
+                                <h1>Amir Nageh</h1>
+                                <span>odjsojdsmlfjvojefp,meovjohojfeojfe</span>
+                            </div>
+                        </li>
+                        <li>
+                            <b><img src="images/me.jpg" alt="" width="50" height="50"></b>
+                            <div>
+                                <h1>Amir Nageh</h1>
+                                <span>odjsojdsmlfjvojefp,meovjohojfeojfe</span>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+
+                    <li>
+                        <a href="categories.html" class="hvr-underline-from-left"><i class="fa fa-fw fa-suitcase"></i> &nbsp;Categories</a>
+                    </li>
+
+                    <li class="active">
+                        <a href="messages.html" class="hvr-underline-from-left"><i class="fa fa-fw fa-envelope"></i> &nbsp;Messages</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html" class="hvr-underline-from-left"><i class="fa fa-fw fa-suitcase"></i> &nbsp;About Site</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+
+                <!-- /.row -->
+                <div class="inboxm col-xs-12">
+
+                    <div class="mess-send col-lg-3 hidden-xs hidden-sm hidden-md">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="img-mess">
+                                        <img src="images/avatar2_big.png" width="50" height="50">
+                                    </div>
+
+                                    <div class="data-mess">
+                                        <span>Amir Nageh</span>
+                                        <h5><i class="fa fa-clock-o"></i> 3 sec</h5>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li id="show-sending1">
+                                <a href="#">
+                                    <div class="img-mess">
+                                        <img src="images/avatar3_big.png" width="50" height="50">
+                                    </div>
+
+                                    <div class="data-mess">
+                                        <span>emy emy</span>
+                                        <h5><i class="fa fa-clock-o"></i>&nbsp;3 Sec</h5>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <div class="img-mess">
+                                        <img src="images/avatar2_big.png" width="50" height="50">
+                                    </div>
+
+                                    <div class="data-mess">
+                                        <span>Amir Nageh</span>
+                                        <h5><i class="fa fa-clock-o"></i> 3 sec</h5>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img-mess">
+                                        <img src="images/avatar2_big.png" width="50" height="50">
+                                    </div>
+
+                                    <div class="data-mess">
+                                        <span>Amir Nageh</span>
+                                        <h5><i class="fa fa-clock-o"></i> 3 sec</h5>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img-mess">
+                                        <img src="images/avatar2_big.png" width="50" height="50">
+                                    </div>
+
+                                    <div class="data-mess">
+                                        <span>Amir Nageh</span>
+                                        <h5><i class="fa fa-clock-o"></i> 3 sec</h5>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img-mess">
+                                        <img src="images/avatar2_big.png" width="50" height="50">
+                                    </div>
+
+                                    <div class="data-mess">
+                                        <span>Amir Nageh</span>
+                                        <h5><i class="fa fa-clock-o"></i> 3 sec</h5>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img-mess">
+                                        <img src="images/avatar2_big.png" width="50" height="50">
+                                    </div>
+
+                                    <div class="data-mess">
+                                        <span>Amir Nageh</span>
+                                        <h5><i class="fa fa-clock-o"></i> 3 sec</h5>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img-mess">
+                                        <img src="images/avatar2_big.png" width="50" height="50">
+                                    </div>
+
+                                    <div class="data-mess">
+                                        <span>Amir Nageh</span>
+                                        <h5><i class="fa fa-clock-o"></i> 3 sec</h5>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img-mess">
+                                        <img src="images/avatar2_big.png" width="50" height="50">
+                                    </div>
+
+                                    <div class="data-mess">
+                                        <span>Amir Nageh</span>
+                                        <h5><i class="fa fa-clock-o"></i> 3 sec</h5>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img-mess">
+                                        <img src="images/avatar2_big.png" width="50" height="50">
+                                    </div>
+
+                                    <div class="data-mess">
+                                        <span>Amir Nageh</span>
+                                        <h5><i class="fa fa-clock-o"></i> 3 sec</h5>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img-mess">
+                                        <img src="images/avatar2_big.png" width="50" height="50">
+                                    </div>
+
+                                    <div class="data-mess">
+                                        <span>Amir Nageh</span>
+                                        <h5><i class="fa fa-clock-o"></i> 3 sec</h5>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img-mess">
+                                        <img src="images/avatar2_big.png" width="50" height="50">
+                                    </div>
+
+                                    <div class="data-mess">
+                                        <span>Amir Nageh</span>
+                                        <h5><i class="fa fa-clock-o"></i> 3 sec</h5>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img-mess">
+                                        <img src="images/avatar2_big.png" width="50" height="50">
+                                    </div>
+
+                                    <div class="data-mess">
+                                        <span>Amir Nageh</span>
+                                        <h5><i class="fa fa-clock-o"></i> 3 sec</h5>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+
+                    <div class="mess-out col-lg-9 col-md-12 col-xs-12">
+                        <div class="out-top col-xs-12">
+                            <div class="usr-t col-xs-12">
+                                <div class="usr-data">
+                                    <span>Amir Nageh</span>
+                                    <h5><i class="fa fa-clock-o"></i>&nbsp;3 Sec</h5>
+                                </div>
+                            </div>
+
+                            <div class="cont-mas col-xs-12">
+                                <div class="answer col-xs-12">
+                                    <div class="usr-t col-xs-12">
+                                        <div class="usr-img">
+                                            <img src="images/avatar3_big.png" width="40" height="40">
+                                        </div>
+
+                                        <div class="usr-data">
+                                            <span>Emy</span>
+                                            <h5><i class="fa fa-clock-o"></i>&nbsp;3 Sec</h5>
+                                        </div>
+                                    </div>
+                                    <pre>
+                                        Hi John,
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, libero corporis ipsam voluptatibus suscipit eos expedita sapiente omnis voluptatum ea! Culpa, vitae eaque quis modi voluptatum quisquam ullam. Modi, tempora!
+                                    
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, libero corporis ipsam voluptatibus suscipit eos expedita sapiente omnis voluptatum ea! Culpa, vitae eaque quis modi voluptatum quisquam ullam. Modi, tempora!
+                                    
+                r, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                                    Thanks ..،
+                                        Jerry
+                                    </pre>
+                                </div>
+
+                                <div class="answer col-xs-12">
+                                    <div class="usr-t col-xs-12">
+                                        <div class="usr-img">
+                                            <img src="images/avatar2_big.png" width="40" height="40">
+                                        </div>
+
+                                        <div class="usr-data">
+                                            <span>Amir Nageh</span>
+                                            <h5><i class="fa fa-clock-o"></i>&nbsp;3 Sec</h5>
+                                        </div>
+                                    </div>
+                                    <pre>
+                                        Hi John,
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, libero corporis ipsam voluptatibus suscipit eos expedita sapiente omnis voluptatum ea! Culpa, vitae eaque quis modi voluptatum quisquam ullam. Modi, tempora!
+                                    
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, libero corporis ipsam voluptatibus suscipit eos expedita sapiente omnis voluptatum ea! Culpa, vitae eaque quis modi voluptatum quisquam ullam. Modi, tempora!
+                                    
+                r, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                                    Thanks ..،
+                                        Jerry
+                                    </pre>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="out-bottom col-xs-12">
+                            <form method="" action="">
+                                <textarea class="area-mess" placeholder="Type your message here ..."></textarea>
+                            </form>
+                            <div class="btns-add col-xs-12">
+                                <input type="submit" class="sent" value="Send">
+                                <div class="msg-up text-center">
+                                    <span><i class="fa fa-link"></i> &nbsp; Upload files and images</span>
+                                    <input type="file" class="upload">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- /#page-wrapper -->
+
+        </div>
+        <!-- /#wrapper -->
+
+        <!-- scripts -->
+        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery.bpopup.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+        <script type="text/javascript" src="js/alertify.min.js"></script>
+        <script type="text/javascript" src="js/myscript.js"></script>
+
+
+</body>
+
+</html>
